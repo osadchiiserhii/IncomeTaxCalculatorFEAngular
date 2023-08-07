@@ -1,0 +1,19 @@
+.tax-calculation-input-container {
+    padding: 1em;
+    border: solid 1px black;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+}
+.tax-calculation-result-container {
+    border: solid 1px black;
+    border-top: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+p {
+    margin: 0;
+}

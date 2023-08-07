@@ -1,0 +1,26 @@
+<div class="container" style="width: max-content;">
+    <h2 class="row">Tax Calculator</h2>
+    <div class="row">
+        <div class="tax-calculation-input-container">
+            <label for="grossAnnualSalary">Gross Annual Salary:</label>
+            <input 
+                type="number" 
+                id="grossAnnualSalary" 
+                [(ngModel)]="grossAnnualSalary" 
+            />
+            <button (click)="onCalculateButtonPressed()">Calculate</button>
+        </div>
+    </div>
+
+    <div *ngIf="result" class="tax-calculation-result-container row">
+        <div class="col-sm">
+            <p>Gross Annual Salary: £{{ result.grossAnnualSalary }}</p>
+            <p>Gross Monthly Salary: £{{ result.grossMonthlySalary }}</p>
+            <p>Net Annual Salary: £{{ result.netAnnualSalary }}</p>
+            <p>Net Monthly Salary: £{{ result.netMonthlySalary }}</p>
+            <p>Annual Tax Paid: £{{ result.annualTaxPaid }}</p>
+            <p>Monthly Tax Paid: £{{ result.monthlyTaxPaid }}</p>
+        </div>
+    </div>
+
+</div>
